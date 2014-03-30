@@ -33,14 +33,14 @@ After a successful installation, your site should look like this:
 
 <h1>Adding Images</h1>
 <ul>
-	<li>Click on the 'add' button or navigate to <code>Media > Add New</code> on the admin panel to upload images into the Media Library</li>
+	<li>Click on the 'add' button, 'Get Started Here' link or navigate to <code>Media > Add New</code> on the admin panel to upload images into the Media Library</li>
 	<img src="_demo/add.png"/>
 	<li>Refresh or Navigate to the root directory to see changes.</li>
 </ul>
 
 
 
-<h2>Planned Future Updates</h2>
+<h3>Planned Future Updates</h2>
 <ul>
 	<li>Add media via URL</li>
 	<li>Image meta data</li>
@@ -48,6 +48,11 @@ After a successful installation, your site should look like this:
 	<li>Lightbox</li>
 	<li>Tag and Category filters</li>
 </ul>
+
+
+<h3>Contribute</h3>
+
+If you think you can make this better, please Download, Fork, & Commit. We'd love to see your ideas.
 
 
 
