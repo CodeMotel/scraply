@@ -1,0 +1,184 @@
+
+
+/* Links and Headers
+======================================================= */
+a {
+	color:$link-color;
+	@include ease;
+
+	&:focus, &:hover, &:active {outline: 0;}
+	&:hover {color:$link-hover-color;}
+}
+
+h1, h2, h3, h4, h5 {
+	margin-bottom:0.35em;
+	color:$headline-color;
+	letter-spacing:0.05em;
+	text-transform:uppercase;
+	@include font-lato(900);
+	a {
+		text-decoration:none;
+		color:$headline-color;
+	}
+}
+
+h1 {font-size:4.5em;}
+h2 {font-size:3.25em;}
+h3 {font-size:2.25em;}
+h4 {font-size:2.1em;}
+h5 {font-size:1em;}
+
+
+
+
+
+
+/* Main Body Styles
+======================================================= */
+body {
+	font-size:62.5%;
+	color:$body-copy-color;
+	@include font-lato;
+}
+
+
+
+
+/* Header/Logo and Tagline
+======================================================= */
+header {
+	// Site Header
+	&#masthead {
+		position:relative;
+		top:0;
+		left:0;
+		right:0;
+		z-index: 9999;
+		background:$header-bkgd-color;
+		padding:13px 0;
+		.site-branding {
+			h1 {
+				font-size:2.2em;
+				margin-left:15px;
+				margin-bottom:0;
+				a {
+					color:$logo-color;
+					&:hover {color:$logo-hover-color;}
+				}
+			}
+			#top-btn {
+				position:absolute;
+				top:16px;
+				right:15px;
+				color:$top-link-color;
+				text-decoration: none;
+				font-size:1.5em;
+				span {
+					opacity:0;
+					margin-right:5px;
+					color:$top-link-color;
+					text-transform: uppercase;
+					font-size: 1em;
+					@include font-lato(700);
+					@include ease;
+				}
+				&:hover {
+					color:$top-link-hover-color;
+					span {
+						opacity:1;
+						margin-right:10px;
+						color:$top-link-hover-color;
+					}
+				}
+			}
+		}
+	}
+	// Post Header
+	&.entry-header {display:none;}
+}
+
+
+
+
+/* Content
+======================================================= */
+
+#main {
+	width: 100%;
+	position: relative;
+	// List Items
+	a {
+		display: inline-block;
+		box-sizing: border-box;
+		padding:0;
+		margin:0;
+		cursor:pointer;
+		// Images
+		img {
+			height: auto;
+			padding:0;
+			margin:0;
+			width:100%;
+			@include ease;
+		}
+		// View Full Size Icon
+		&:after {
+			$font-size:60px;
+			font-size: $font-size;
+			height:$font-size;
+			weight:$font-size;
+			margin-left:($font-size / 2) * -1;
+			margin-top:($font-size / 2) * -1;
+			content: '\f403';
+			font-family:'genericons';
+			color:white;
+			color:rgba(255,255,255,0.8);
+			text-shadow:2px 2px 2px #aaa;
+			text-shadow:2px 2px 2px rgba(0,0,0,0.1);
+			position:absolute;
+			top:50%;
+			left:50%;
+			right:50%;
+			opacity: 0;
+			@include ease;
+		}
+		// Hover States
+		&:hover {
+			&:after {opacity:1;}
+			img {opacity:0.5;}
+		}
+	}
+}
+
+// Hide Edit Link
+.edit-link {display:none;}
+
+// Hide WP-Admin Bar
+//#wpadminbar {display:none;}
+
+
+
+
+/* Footer
+======================================================= */
+footer {}
+
+
+
+
+/* Extras
+======================================================= */
+
+
+
+/* Selection Colors
+======================================================= */
+::selection {
+	background:$highlight-bkgd-color;
+	color:$highlight-color;
+}
+
+::-moz-selection {
+	background:$highlight-bkgd-color;
+	color:$highlight-color;
+}

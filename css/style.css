@@ -1,0 +1,252 @@
+/* #Reset
+================================================================================================= */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Media - Fluid Images - Video
+======================================================= */
+figure {
+  margin: 0;
+}
+
+img, object, embed, video {
+  max-width: 100%;
+  _width: 100%;
+}
+
+/* Fluid images */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Improve IE's resizing of images */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Correct IE9 overflow */
+img {
+  height: auto;
+}
+
+/* Colors
+================================================================================================= */
+/* Elements
+================================================================================================= */
+/* Transition Times
+================================================================================================= */
+/* Links and Headers
+======================================================= */
+a {
+  color: #3498db;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+a:focus, a:hover, a:active {
+  outline: 0;
+}
+a:hover {
+  color: #e67e22;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 0.35em;
+  color: #444444;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: 'Lato', helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a {
+  text-decoration: none;
+  color: #444444;
+}
+
+h1 {
+  font-size: 4.5em;
+}
+
+h2 {
+  font-size: 3.25em;
+}
+
+h3 {
+  font-size: 2.25em;
+}
+
+h4 {
+  font-size: 2.1em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+/* Main Body Styles
+======================================================= */
+body {
+  font-size: 62.5%;
+  color: #444444;
+  font-family: 'Lato', helvetica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Header/Logo and Tagline
+======================================================= */
+header#masthead {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #273646;
+  padding: 13px 0;
+}
+header#masthead .site-branding h1 {
+  font-size: 2.2em;
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+header#masthead .site-branding h1 a {
+  color: #11181f;
+}
+header#masthead .site-branding h1 a:hover {
+  color: #cccccc;
+}
+header#masthead .site-branding #top-btn {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  color: #11181f;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+header#masthead .site-branding #top-btn span {
+  opacity: 0;
+  margin-right: 5px;
+  color: #11181f;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: 'Lato', helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+header#masthead .site-branding #top-btn:hover {
+  color: #cccccc;
+}
+header#masthead .site-branding #top-btn:hover span {
+  opacity: 1;
+  margin-right: 10px;
+  color: #cccccc;
+}
+header.entry-header {
+  display: none;
+}
+
+/* Content
+======================================================= */
+#main {
+  width: 100%;
+  position: relative;
+}
+#main a {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+#main a img {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+#main a:after {
+  font-size: 60px;
+  height: 60px;
+  weight: 60px;
+  margin-left: -30px;
+  margin-top: -30px;
+  content: '\f403';
+  font-family: 'genericons';
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 2px 2px 2px #aaa;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  opacity: 0;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+#main a:hover:after {
+  opacity: 1;
+}
+#main a:hover img {
+  opacity: 0.5;
+}
+
+.edit-link {
+  display: none;
+}
+
+/* Footer
+======================================================= */
+/* Extras
+======================================================= */
+/* Selection Colors
+======================================================= */
+::-moz-selection {
+  background: #e67e22;
+  color: white;
+}
+::selection {
+  background: #e67e22;
+  color: white;
+}
+
+::-moz-selection {
+  background: #e67e22;
+  color: white;
+}
