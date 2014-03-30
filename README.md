@@ -1,7 +1,7 @@
 Scraply
 ================
 
-A personal image bookmark gallery built on Wordpress.
+A personal image bookmark gallery built on Wordpress. <a href="http://scraply.see8ch.com" target="_blank">View Demo</a>.
 
 <img src="_demo/home.png"/>
 
