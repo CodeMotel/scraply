@@ -47,6 +47,7 @@ After a successful installation, your site should look like this:
 	<li>Share to social networks</li>
 	<li>Lightbox</li>
 	<li>Tag and Category filters</li>
+	<li>Pagination and Infinite Scroll</li>
 </ul>
 
 
