@@ -119,6 +119,45 @@ require get_template_directory() . '/inc/jetpack.php';
 
 
 
+
+
+
+
+function the_attachment_link_2( $id = 0, $fullsize = false, $deprecated = false, $permalink = false ) {
+	if ( !empty( $deprecated ) )
+		_deprecated_argument( __FUNCTION__, '2.5' );
+
+	if ( $fullsize )
+		echo wp_get_attachment_link_2($id, 'full', $permalink);
+	else
+		echo wp_get_attachment_link_2($id, 'thumbnail', $permalink);
+}
+
+function wp_get_attachment_link_2( $id = 0, $size = 'thumbnail', $permalink = false, $icon = false, $text = false ) {
+	$id = intval( $id );
+	$_post = get_post( $id );
+
+	if ( empty( $_post ) || ( 'attachment' != $_post->post_type ) || ! $url = wp_get_attachment_url( $_post->ID ) )
+		return __( 'Missing Attachment' );
+
+	if ( $permalink )
+		$url = get_attachment_link( $_post->ID );
+
+	$post_title = esc_attr( $_post->post_title );
+
+	if ( $text )
+		$link_text = $text;
+	elseif ( $size && 'none' != $size )
+		$link_text = wp_get_attachment_image( $id, $size, $icon );
+	else
+		$link_text = '';
+
+	if ( trim( $link_text ) == '' )
+		$link_text = $_post->post_title;
+
+	return apply_filters( 'wp_get_attachment_link', "<a>$link_text</a>", $id, $size, $permalink, $icon, $text );
+}
+
 // unattached Images
 function get_attachment_files(){
 $args = array(
@@ -132,7 +171,7 @@ $attachments = get_posts($args);
  	echo '<section id="gallery">';
     foreach ($attachments as $post) {
         setup_postdata($post);
-        the_attachment_link($post->ID);
+        the_attachment_link_2($post->ID);
     }
     echo '</section>';
  }

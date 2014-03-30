@@ -293,14 +293,34 @@ body.admin-bar #add-new-wrapper.active {
   left: 50%;
   right: 50%;
   opacity: 0;
-  -webkit-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
+  -webkit-transition: opacity 333ms ease-in-out;
+  transition: opacity 333ms ease-in-out;
 }
 #main #gallery a:hover:after {
   opacity: 1;
 }
 #main #gallery a:hover img {
   opacity: 0.5;
+}
+#main #gallery a.active {
+  width: 70% !important;
+  margin: 0 15%;
+  left: 0 !important;
+  z-index: 999;
+}
+#main #gallery a.active:hover img {
+  opacity: 1;
+}
+#main #gallery a.active:after {
+  content: '\f406';
+  top: 15px;
+  right: 15px;
+  left: auto;
+  margin-left: 0;
+  margin-top: 0;
+  font-size: 15px;
+  height: 15px;
+  width: 15px;
 }
 
 /* Emtpy Gallery

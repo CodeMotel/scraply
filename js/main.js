@@ -6,9 +6,8 @@ $(document).ready(function(){
       resizeDiv();
   };
   function resizeDiv() {
-     vpw = $(window).width();
-     vph = $(window).height();
-
+      vpw = $(window).width();
+      vph = $(window).height();
      // -- Section Width and Height -- //
      $('#gallery a').wookmark({
 		autoResize: true,
@@ -20,7 +19,16 @@ $(document).ready(function(){
 		verticalOffset: -3,
 		onLayoutChanged: true
 	});
+     //$('#gallery a.active').attr('height', 'vph !important');
+     $('#gallery a.active').css({'height': vph - 32 + 'px'});
 }
+
+// Toggle Full Size
+$("#gallery a").click(function(){
+  //$('#gallery a').removeClass("active");
+  $(this).toggleClass("active");
+});
+
 
 
 // Sticky Header
@@ -48,7 +56,6 @@ $('#top-btn').click(function(){
     $("html, body").animate({ scrollTop: 0 }, 1000);
     return false;
  });
-
 
 
 
