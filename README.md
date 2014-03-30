@@ -33,7 +33,7 @@ Scraply also works as a hosted library.
 
 
 
-<h1>Planned Updates</h1>
+<h2>Planned Updates</h2>
 <ul>
 	<li>Add via URL</li>
 	<li>Image meta data</li>
