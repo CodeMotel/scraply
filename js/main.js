@@ -24,8 +24,6 @@ $(document).ready(function(){
 
 
 
-
-
 // Sticky Header
 $(function() {
   var sticky_navigation_offset_top = $('#masthead').offset().top;

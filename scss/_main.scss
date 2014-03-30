@@ -13,7 +13,7 @@ a {
 h1, h2, h3, h4, h5 {
 	margin-bottom:0.35em;
 	color:$headline-color;
-	letter-spacing:0.05em;
+	letter-spacing:0.1em;
 	text-transform:uppercase;
 	@include font-lato(900);
 	a {
@@ -61,19 +61,30 @@ header {
 				font-size:2.2em;
 				margin-left:15px;
 				margin-bottom:0;
+				@include font-lato(300);
 				a {
 					color:$logo-color;
+					span {
+						position:relative;
+						top:-2px;
+						margin-right: 5px;
+						$font-size:28px;
+						font-size: $font-size;
+						height:$font-size;
+						width:$font-size;
+						color:$red;
+					}
 					&:hover {color:$logo-hover-color;}
 				}
 			}
 			#top-btn {
 				position:absolute;
 				top:16px;
-				right:15px;
+				right:25px;
 				color:$top-link-color;
 				text-decoration: none;
 				font-size:1.5em;
-				span {
+				span.hidden {
 					opacity:0;
 					margin-right:5px;
 					color:$top-link-color;
@@ -82,9 +93,17 @@ header {
 					@include font-lato(700);
 					@include ease;
 				}
+				span.genericon {
+					$font-size:25px;
+					font-size: $font-size;
+					height:$font-size;
+					weight:$font-size;
+					position:relative;
+					top:-6px;
+				}
 				&:hover {
 					color:$top-link-hover-color;
-					span {
+					span.hidden {
 						opacity:1;
 						margin-right:10px;
 						color:$top-link-hover-color;
@@ -186,7 +205,25 @@ section {
 
 /* Footer
 ======================================================= */
-footer {}
+footer {
+	width:100%;
+	margin-top:20px;
+	background:$footer-background-color;
+	padding:10px 0;
+	text-align:center;
+	color:$footer-text-color;
+	a {
+		.genericon {
+			$font-size:14px;
+			font-size: $font-size;
+			height:$font-size;
+			weight:$font-size;
+			text-decoration: none;
+			position:relative;
+			top:-2px;
+		}
+	}
+}
 
 
 

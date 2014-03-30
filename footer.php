@@ -8,6 +8,9 @@
  */
 ?>
 
+<footer>
+	<p>SCRAPLY is by <a href="http://see8ch.com">Chris Holder</a> — <a href="https://github.com/see8ch/scraply">View on Github <span class="genericon genericon-github"></span></a></p>
+</footer>
 
 <?php wp_footer(); ?>
 

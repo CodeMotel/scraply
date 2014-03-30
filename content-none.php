@@ -7,6 +7,12 @@
  * @package sparkly
  */
 ?>
+<style>
+	footer {
+		position: fixed;
+		bottom:0;
+	}
+</style>
 
 <section class="no-results not-found">
 	<header class="page-header">

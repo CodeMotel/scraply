@@ -82,7 +82,7 @@ a:hover {
 h1, h2, h3, h4, h5 {
   margin-bottom: 0.35em;
   color: #dddddd;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   font-family: 'Lato', helvetica, sans-serif;
   font-weight: 900;
@@ -138,25 +138,37 @@ header#masthead .site-branding h1 {
   font-size: 2.2em;
   margin-left: 15px;
   margin-bottom: 0;
+  font-family: 'Lato', helvetica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 header#masthead .site-branding h1 a {
-  color: #0d1318;
+  color: #dddddd;
+}
+header#masthead .site-branding h1 a span {
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
+  font-size: 28px;
+  height: 28px;
+  width: 28px;
+  color: #c0392b;
 }
 header#masthead .site-branding h1 a:hover {
-  color: #cccccc;
+  color: white;
 }
 header#masthead .site-branding #top-btn {
   position: absolute;
   top: 16px;
-  right: 15px;
-  color: #0d1318;
+  right: 25px;
+  color: #dddddd;
   text-decoration: none;
   font-size: 1.5em;
 }
-header#masthead .site-branding #top-btn span {
+header#masthead .site-branding #top-btn span.hidden {
   opacity: 0;
   margin-right: 5px;
-  color: #0d1318;
+  color: #dddddd;
   text-transform: uppercase;
   font-size: 1em;
   font-family: 'Lato', helvetica, sans-serif;
@@ -165,13 +177,20 @@ header#masthead .site-branding #top-btn span {
   -webkit-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
-header#masthead .site-branding #top-btn:hover {
-  color: #cccccc;
+header#masthead .site-branding #top-btn span.genericon {
+  font-size: 25px;
+  height: 25px;
+  weight: 25px;
+  position: relative;
+  top: -6px;
 }
-header#masthead .site-branding #top-btn:hover span {
+header#masthead .site-branding #top-btn:hover {
+  color: white;
+}
+header#masthead .site-branding #top-btn:hover span.hidden {
   opacity: 1;
   margin-right: 10px;
-  color: #cccccc;
+  color: white;
 }
 header.entry-header {
   display: none;
@@ -246,6 +265,23 @@ section.no-results .page-content p, section.not-found .page-content p {
 
 /* Footer
 ======================================================= */
+footer {
+  width: 100%;
+  margin-top: 20px;
+  background: #eeeeee;
+  padding: 10px 0;
+  text-align: center;
+  color: #777777;
+}
+footer a .genericon {
+  font-size: 14px;
+  height: 14px;
+  weight: 14px;
+  text-decoration: none;
+  position: relative;
+  top: -2px;
+}
+
 /* Extras
 ======================================================= */
 /* Selection Colors

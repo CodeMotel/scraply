@@ -25,8 +25,8 @@
 
 <header id="masthead" class="site-header" role="banner">
 	<div class="site-branding">
-		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-		<a id="top-btn" href="#main"><span>Top</span>▲</a>
+		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="genericon genericon-heart"></span><?php bloginfo( 'name' ); ?></a></h1>
+		<a id="top-btn" href="#main"><span class="hidden">Top</span><span class="genericon genericon-top"></span></a>
 	</div>
 </header><!-- #masthead -->
 
