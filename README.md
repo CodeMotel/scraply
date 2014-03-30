@@ -51,9 +51,8 @@ After a successful installation, your site should look like this:
 
 
 <h3>Contribute</h3>
-
-If you think you can make this better, please Download, Fork, & Commit. We'd love to see your ideas.
-
+If you would like to contribute, please let me know your ideas :)
 
 
+<h3>Other</h3>
 Scraply is built on WordPress with Automattic's <a href="http://underscores.me/">Underscores</a> theme template.
