@@ -26,7 +26,7 @@ $header-bkgd-color:$midnight-blue;
 $logo-color:#ddd;//darken($midnight-blue, 18%);//#eee;
 $logo-hover-color:white;//darken($midnight-blue, 18%);
 
-$top-link-color: $logo-color;
+$top-link-color: darken($midnight-blue, 18%);//$logo-color;
 $top-link-hover-color:$logo-hover-color;
 
 $footer-background-color: #eee;

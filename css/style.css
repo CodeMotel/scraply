@@ -134,9 +134,12 @@ header#masthead {
   background: #273646;
   padding: 13px 0;
 }
+header#masthead .site-branding {
+  z-index: 9999;
+}
 header#masthead .site-branding h1 {
   font-size: 2.2em;
-  margin-left: 15px;
+  margin-left: 20px;
   margin-bottom: 0;
   font-family: 'Lato', helvetica, sans-serif;
   font-weight: 300;
@@ -148,7 +151,7 @@ header#masthead .site-branding h1 a {
 header#masthead .site-branding h1 a span {
   position: relative;
   top: -2px;
-  margin-right: 5px;
+  margin-right: 6px;
   font-size: 28px;
   height: 28px;
   width: 28px;
@@ -157,43 +160,85 @@ header#masthead .site-branding h1 a span {
 header#masthead .site-branding h1 a:hover {
   color: white;
 }
-header#masthead .site-branding #top-btn {
+header#masthead .site-branding #top-btn, header#masthead .site-branding #add-btn {
   position: absolute;
-  top: 16px;
+  top: 18px;
   right: 25px;
-  color: #dddddd;
+  color: #06080b;
   text-decoration: none;
   font-size: 1.5em;
 }
-header#masthead .site-branding #top-btn span.hidden {
+header#masthead .site-branding #top-btn span.hidden, header#masthead .site-branding #add-btn span.hidden {
+  position: absolute;
+  top: -50px;
+  right: 70px;
   opacity: 0;
-  margin-right: 5px;
-  color: #dddddd;
+  margin-right: 0px;
+  color: #06080b;
   text-transform: uppercase;
   font-size: 1em;
+  letter-spacing: 0.075em;
   font-family: 'Lato', helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   font-style: normal;
   -webkit-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
-header#masthead .site-branding #top-btn span.genericon {
+header#masthead .site-branding #top-btn span.genericon, header#masthead .site-branding #add-btn span.genericon {
   font-size: 25px;
   height: 25px;
-  weight: 25px;
+  width: 25px;
   position: relative;
   top: -6px;
+  cursor: pointer;
 }
-header#masthead .site-branding #top-btn:hover {
+header#masthead .site-branding #top-btn:hover, header#masthead .site-branding #top-btn.active, header#masthead .site-branding #add-btn:hover, header#masthead .site-branding #add-btn.active {
   color: white;
 }
-header#masthead .site-branding #top-btn:hover span.hidden {
+header#masthead .site-branding #top-btn:hover span.hidden, header#masthead .site-branding #top-btn.active span.hidden, header#masthead .site-branding #add-btn:hover span.hidden, header#masthead .site-branding #add-btn.active span.hidden {
   opacity: 1;
-  margin-right: 10px;
+  top: -1px;
   color: white;
+}
+header#masthead .site-branding #add-btn {
+  right: 60px;
+}
+header#masthead .site-branding #add-btn span.genericon {
+  top: -5px;
+}
+header#masthead .site-branding #add-btn span.hidden {
+  right: 35px;
 }
 header.entry-header {
   display: none;
+}
+
+body #add-new-wrapper {
+  position: fixed;
+  top: -1000px;
+  right: 20px;
+  width: 90%;
+  max-width: 400px;
+  z-index: 10;
+  overflow: hidden;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+body #add-new-wrapper iframe#add-new-iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 600px;
+  position: relative;
+  top: 0px;
+}
+body #add-new-wrapper.active {
+  top: 54px;
+}
+body.admin-bar #add-new-wrapper iframe#add-new-iframe {
+  top: -46px;
+}
+body.admin-bar #add-new-wrapper.active {
+  top: 86px;
 }
 
 /* Content
@@ -210,7 +255,7 @@ header.entry-header {
   padding: 0;
   margin: 0;
   cursor: pointer;
-  background: #ddd;
+  background: #eee;
 }
 #main #gallery a img {
   height: auto;
@@ -223,7 +268,7 @@ header.entry-header {
 #main #gallery a:after {
   font-size: 60px;
   height: 60px;
-  weight: 60px;
+  width: 60px;
   margin-left: -30px;
   margin-top: -30px;
   content: '\f403';
@@ -272,6 +317,7 @@ footer {
   padding: 10px 0;
   text-align: center;
   color: #777777;
+  letter-spacing: 0.05em;
 }
 footer a .genericon {
   font-size: 14px;

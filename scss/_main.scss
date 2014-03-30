@@ -57,9 +57,10 @@ header {
 		background:$header-bkgd-color;
 		padding:13px 0;
 		.site-branding {
+			z-index: 9999;
 			h1 {
 				font-size:2.2em;
-				margin-left:15px;
+				margin-left:20px;
 				margin-bottom:0;
 				@include font-lato(300);
 				a {
@@ -67,48 +68,62 @@ header {
 					span {
 						position:relative;
 						top:-2px;
-						margin-right: 5px;
+						margin-right: 6px;
 						$font-size:28px;
 						font-size: $font-size;
 						height:$font-size;
 						width:$font-size;
 						color:$red;
 					}
-					&:hover {color:$logo-hover-color;}
+					&:hover {
+						color:$logo-hover-color;
+					}
 				}
 			}
-			#top-btn {
+			#top-btn, #add-btn {
 				position:absolute;
-				top:16px;
+				top:18px;
 				right:25px;
 				color:$top-link-color;
 				text-decoration: none;
 				font-size:1.5em;
 				span.hidden {
+					position:absolute;
+					top:-50px;
+					right:70px;
 					opacity:0;
-					margin-right:5px;
+					margin-right:0px;
 					color:$top-link-color;
 					text-transform: uppercase;
 					font-size: 1em;
-					@include font-lato(700);
+					letter-spacing:0.075em;
+					@include font-lato(300);
 					@include ease;
 				}
 				span.genericon {
 					$font-size:25px;
 					font-size: $font-size;
 					height:$font-size;
-					weight:$font-size;
+					width:$font-size;
 					position:relative;
 					top:-6px;
+					cursor:pointer;
 				}
-				&:hover {
+				&:hover,
+				&.active {
 					color:$top-link-hover-color;
 					span.hidden {
 						opacity:1;
-						margin-right:10px;
+						top:-1px;
 						color:$top-link-hover-color;
 					}
 				}
+			}
+			#add-btn {
+				//display: none;
+				right:60px;
+				span.genericon {top:-5px;}
+				span.hidden {right:35px;}
 			}
 		}
 	}
@@ -116,7 +131,34 @@ header {
 	&.entry-header {display:none;}
 }
 
-
+body {
+	#add-new-wrapper {
+		position:fixed;
+		top:-1000px;
+		right:20px;
+		width:90%;
+		max-width:400px;
+		z-index: 10;
+		overflow: hidden;
+		@include ease;
+		iframe#add-new-iframe {
+			width:100%;
+			max-width:400px;
+			height:600px;
+			position:relative;
+			top:0px;
+		}
+		&.active {top:54px;}
+	}
+	&.admin-bar {
+		#add-new-wrapper {
+			iframe#add-new-iframe {
+				top:-46px;
+			}
+			&.active {top:86px;}
+		}
+	}
+}
 
 
 /* Content
@@ -133,7 +175,7 @@ header {
 			padding:0;
 			margin:0;
 			cursor:pointer;
-			background:#ddd;
+			background:#eee;
 			// Images
 			img {
 				height: auto;
@@ -147,7 +189,7 @@ header {
 				$font-size:60px;
 				font-size: $font-size;
 				height:$font-size;
-				weight:$font-size;
+				width:$font-size;
 				margin-left:($font-size / 2) * -1;
 				margin-top:($font-size / 2) * -1;
 				content: '\f403';
@@ -198,6 +240,7 @@ section {
 .edit-link {display:none;}
 
 // Hide WP-Admin Bar
+//html {margin: 0 !important;}
 //#wpadminbar {display:none;}
 
 
@@ -212,6 +255,7 @@ footer {
 	padding:10px 0;
 	text-align:center;
 	color:$footer-text-color;
+	letter-spacing:0.05em;
 	a {
 		.genericon {
 			$font-size:14px;
