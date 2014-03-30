@@ -14,7 +14,7 @@ Scraply works great as a private local library.
 	<li>Create a local database and install <a href="http://wordpress.org/download/" target="_blank">WordPress</a></li>
 	<li>Navigate to your directory (ex: <code>scraply:8888/</code>) and run the WordPress install</li>
 	<li>Upload the <code>sparkly</code> theme to <code>wp-content/themes/</code></li>
-	<li>Navigate to <code>Settings > Media</code> through the admin panel and set the thumbnail size to 600px by 600px and uncheck 'Crop Thumgnail...'.</li>
+	<li>Navigate to <code>Settings > Media</code> through the admin panel and set the thumbnail size to 600px by 600px and uncheck 'Crop Thumbnail...'.</li>
 </ul>
 
 <h3>Hosted</h3>
@@ -24,7 +24,7 @@ Scraply also works as a hosted library.
 	<li>Create a database and install <a href="http://wordpress.org/download/" target="_blank">WordPress</a> or use your hosting company's application manager</li>
 	<li>Navigate to your directory and run the WordPress install</li>
 	<li>Upload the <code>sparkly</code> theme to <code>wp-content/themes/</code></li>
-	<li>Navigate to <code>Settings > Media</code> through the admin panel and set the thumbnail size to 600px by 600px and uncheck 'Crop Thumgnail...'.</li>
+	<li>Navigate to <code>Settings > Media</code> through the admin panel and set the thumbnail size to 600px by 600px and uncheck 'Crop Thumbnail...'.</li>
 </ul>
 
 After a successful installation, your site should look like this:
