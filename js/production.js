@@ -512,7 +512,7 @@ $(document).ready(function(){
      // -- Section Width and Height -- //
      $('#gallery a').wookmark({
 		autoResize: true,
-		itemWidth: 400,
+		itemWidth: 380,
 		flexibleWidth:"100%",
 		container: $('#main'),
 		offset: 0,
