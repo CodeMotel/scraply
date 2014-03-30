@@ -138,6 +138,8 @@ header#masthead .site-branding {
   z-index: 9999;
 }
 header#masthead .site-branding h1 {
+  position: relative;
+  top: 2px;
   font-size: 2.2em;
   margin-left: 20px;
   margin-bottom: 0;
@@ -171,13 +173,16 @@ header#masthead .site-branding #top-btn, header#masthead .site-branding #add-btn
 header#masthead .site-branding #top-btn span.hidden, header#masthead .site-branding #add-btn span.hidden {
   position: absolute;
   top: -50px;
-  right: 70px;
+  right: 67px;
   opacity: 0;
   margin-right: 0px;
+  padding: 4px;
+  background: #273646;
   color: #06080b;
   text-transform: uppercase;
   font-size: 1em;
   letter-spacing: 0.075em;
+  cursor: pointer;
   font-family: 'Lato', helvetica, sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -197,7 +202,7 @@ header#masthead .site-branding #top-btn:hover, header#masthead .site-branding #t
 }
 header#masthead .site-branding #top-btn:hover span.hidden, header#masthead .site-branding #top-btn.active span.hidden, header#masthead .site-branding #add-btn:hover span.hidden, header#masthead .site-branding #add-btn.active span.hidden {
   opacity: 1;
-  top: -1px;
+  top: -5px;
   color: white;
 }
 header#masthead .site-branding #add-btn {
@@ -207,12 +212,14 @@ header#masthead .site-branding #add-btn span.genericon {
   top: -5px;
 }
 header#masthead .site-branding #add-btn span.hidden {
-  right: 35px;
+  right: 32px;
 }
 header.entry-header {
   display: none;
 }
 
+/* Media Upload Window
+======================================================= */
 body #add-new-wrapper {
   position: fixed;
   top: -1000px;
@@ -226,7 +233,6 @@ body #add-new-wrapper {
 }
 body #add-new-wrapper iframe#add-new-iframe {
   width: 100%;
-  max-width: 400px;
   height: 600px;
   position: relative;
   top: 0px;
@@ -235,13 +241,13 @@ body #add-new-wrapper.active {
   top: 54px;
 }
 body.admin-bar #add-new-wrapper iframe#add-new-iframe {
-  top: -46px;
+  top: -49px;
 }
 body.admin-bar #add-new-wrapper.active {
   top: 86px;
 }
 
-/* Content
+/* Gallery
 ======================================================= */
 #main {
   width: 100%;
@@ -292,20 +298,19 @@ body.admin-bar #add-new-wrapper.active {
   opacity: 0.5;
 }
 
+/* Emtpy Gallery
+======================================================= */
 section.no-results, section.not-found {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 section.no-results header h1, section.not-found header h1 {
-  font-size: 3em;
+  font-size: 2.8em;
   margin-bottom: 20px;
 }
 section.no-results .page-content p, section.not-found .page-content p {
   font-size: 1.6em;
-}
-
-.edit-link {
-  display: none;
+  letter-spacing: 0.05em;
 }
 
 /* Footer
@@ -326,10 +331,15 @@ footer a .genericon {
   text-decoration: none;
   position: relative;
   top: -2px;
+  margin-left: 2px;
 }
 
-/* Extras
+/* Hide Things
 ======================================================= */
+.edit-link {
+  display: none;
+}
+
 /* Selection Colors
 ======================================================= */
 ::-moz-selection {

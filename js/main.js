@@ -48,8 +48,14 @@ $('#top-btn').click(function(){
     $("html, body").animate({ scrollTop: 0 }, 1000);
     return false;
  });
+$('.site-title a').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 1000);
+    return false;
+ });
 
-// Toggle Upload
+
+
+// Toggle Upload Window
 $("#add-btn").click(function(){
   $("#add-new-wrapper").toggleClass("active");
   $("#add-btn").toggleClass("active");

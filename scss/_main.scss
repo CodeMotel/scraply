@@ -59,6 +59,8 @@ header {
 		.site-branding {
 			z-index: 9999;
 			h1 {
+				position: relative;
+				top: 2px;
 				font-size:2.2em;
 				margin-left:20px;
 				margin-bottom:0;
@@ -90,13 +92,16 @@ header {
 				span.hidden {
 					position:absolute;
 					top:-50px;
-					right:70px;
+					right:67px;
 					opacity:0;
 					margin-right:0px;
+					padding:4px;
+					background:$header-bkgd-color;
 					color:$top-link-color;
 					text-transform: uppercase;
 					font-size: 1em;
 					letter-spacing:0.075em;
+					cursor: pointer;
 					@include font-lato(300);
 					@include ease;
 				}
@@ -114,16 +119,15 @@ header {
 					color:$top-link-hover-color;
 					span.hidden {
 						opacity:1;
-						top:-1px;
+						top:-5px;
 						color:$top-link-hover-color;
 					}
 				}
 			}
 			#add-btn {
-				//display: none;
 				right:60px;
 				span.genericon {top:-5px;}
-				span.hidden {right:35px;}
+				span.hidden {right:32px;}
 			}
 		}
 	}
@@ -131,6 +135,9 @@ header {
 	&.entry-header {display:none;}
 }
 
+
+/* Media Upload Window
+======================================================= */
 body {
 	#add-new-wrapper {
 		position:fixed;
@@ -143,7 +150,6 @@ body {
 		@include ease;
 		iframe#add-new-iframe {
 			width:100%;
-			max-width:400px;
 			height:600px;
 			position:relative;
 			top:0px;
@@ -153,7 +159,7 @@ body {
 	&.admin-bar {
 		#add-new-wrapper {
 			iframe#add-new-iframe {
-				top:-46px;
+				top:-49px;
 			}
 			&.active {top:86px;}
 		}
@@ -161,9 +167,8 @@ body {
 }
 
 
-/* Content
+/* Gallery
 ======================================================= */
-
 #main {
 	width: 100%;
 	position: relative;
@@ -216,15 +221,16 @@ body {
 
 
 
-
+/* Emtpy Gallery
+======================================================= */
 section {
 	&.no-results,
 	&.not-found {
 		text-align: center;
-		margin-top: 100px;
+		margin-top: 120px;
 		header {
 			h1 {
-				font-size:3em;
+				font-size:2.8em;
 				//color:#ddd;
 				margin-bottom:20px;
 			}
@@ -232,16 +238,11 @@ section {
 		.page-content {
 			p {
 				font-size:1.6em;
+				letter-spacing: 0.05em;
 			}
 		}
 	}
 }
-// Hide Edit Link
-.edit-link {display:none;}
-
-// Hide WP-Admin Bar
-//html {margin: 0 !important;}
-//#wpadminbar {display:none;}
 
 
 
@@ -265,6 +266,7 @@ footer {
 			text-decoration: none;
 			position:relative;
 			top:-2px;
+			margin-left:2px;
 		}
 	}
 }
@@ -272,8 +274,11 @@ footer {
 
 
 
-/* Extras
+/* Hide Things
 ======================================================= */
+.edit-link {display:none;}
+
+
 
 
 
