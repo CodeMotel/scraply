@@ -40,7 +40,7 @@ After a successful installation, your site should look like this:
 
 
 
-<h3>Planned Future Updates</h2>
+<h3>Planned Future Updates</h3>
 <ul>
 	<li>Add media via URL</li>
 	<li>Image meta data</li>
