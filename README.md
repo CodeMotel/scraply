@@ -12,8 +12,6 @@ Scraply works great as a private local library.
 	<li>Navigate to your directory (ex: <code>scraply:8888/</code>) and run the WordPress install</li>
 	<li>Upload the <code>sparkly</code> theme to <code>wp-content/themes/</code></li>
 	<li>Navigate to <code>Settings > Media</code> through the admin panel and set the thumbnail size to 600px by 600px and uncheck 'Crop Thumgnail...'.</li>
-	<li>Click on the 'add' button or navigate to <code>Media > Add New</code> on the admin panel to upload images into the Media Library</li>
-	<li>Refresh or Navigate to the root directory to see changes.</li>
 </ul>
 
 
@@ -25,11 +23,15 @@ Scraply also works as a hosted library.
 	<li>Navigate to your directory and run the WordPress install</li>
 	<li>Upload the <code>sparkly</code> theme to <code>wp-content/themes/</code></li>
 	<li>Navigate to <code>Settings > Media</code> through the admin panel and set the thumbnail size to 600px by 600px and uncheck 'Crop Thumgnail...'.</li>
-	<li>Click on the 'add' button or navigate to <code>Media > Add New</code> on the admin panel to upload images into the Media Library</li>
-	<li>Refresh or Navigate to the root directory to see changes.</li>
 </ul>
 
 
+<h1>Adding Images</h1>
+<img src="_demo/add.png"/>
+<ul>
+	<li>Click on the 'add' button or navigate to <code>Media > Add New</code> on the admin panel to upload images into the Media Library</li>
+	<li>Refresh or Navigate to the root directory to see changes.</li>
+</ul>
 
 
 
