@@ -3,6 +3,9 @@ Scraply
 
 A personal image bookmark gallery built on Wordpress.
 
+<img src="_demo/home.png"/>
+
+
 <h1>Installation</h1>
 
 <h3>Local</h3>
@@ -14,7 +17,6 @@ Scraply works great as a private local library.
 	<li>Navigate to <code>Settings > Media</code> through the admin panel and set the thumbnail size to 600px by 600px and uncheck 'Crop Thumgnail...'.</li>
 </ul>
 
-
 <h3>Hosted</h3>
 Scraply also works as a hosted library.
 <ul>
@@ -24,6 +26,9 @@ Scraply also works as a hosted library.
 	<li>Upload the <code>sparkly</code> theme to <code>wp-content/themes/</code></li>
 	<li>Navigate to <code>Settings > Media</code> through the admin panel and set the thumbnail size to 600px by 600px and uncheck 'Crop Thumgnail...'.</li>
 </ul>
+
+After installation, your site should look like this:
+<img src="_demo/empty.png"/>
 
 
 <h1>Adding Images</h1>
