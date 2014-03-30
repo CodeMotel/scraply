@@ -10,7 +10,7 @@ $(document).ready(function(){
      vph = $(window).height();
 
      // -- Section Width and Height -- //
-     $('#main a').wookmark({
+     $('#gallery a').wookmark({
 		autoResize: true,
 		itemWidth: 320,
 		flexibleWidth:"100%",

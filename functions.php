@@ -129,9 +129,14 @@ $args = array(
 );
 $attachments = get_posts($args);
  if ($attachments) {
+ 	echo '<section id="gallery">';
     foreach ($attachments as $post) {
         setup_postdata($post);
         the_attachment_link($post->ID);
     }
+    echo '</section>';
+ }
+ else {
+ 	get_template_part( 'content', 'none' );
  }
 }

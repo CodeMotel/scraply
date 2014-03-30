@@ -81,7 +81,7 @@ a:hover {
 
 h1, h2, h3, h4, h5 {
   margin-bottom: 0.35em;
-  color: #444444;
+  color: #dddddd;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-family: 'Lato', helvetica, sans-serif;
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5 {
 }
 h1 a, h2 a, h3 a, h4 a, h5 a {
   text-decoration: none;
-  color: #444444;
+  color: #dddddd;
 }
 
 h1 {
@@ -117,9 +117,9 @@ h5 {
 ======================================================= */
 body {
   font-size: 62.5%;
-  color: #444444;
+  color: #777777;
   font-family: 'Lato', helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -140,7 +140,7 @@ header#masthead .site-branding h1 {
   margin-bottom: 0;
 }
 header#masthead .site-branding h1 a {
-  color: #11181f;
+  color: #0d1318;
 }
 header#masthead .site-branding h1 a:hover {
   color: #cccccc;
@@ -149,14 +149,14 @@ header#masthead .site-branding #top-btn {
   position: absolute;
   top: 16px;
   right: 15px;
-  color: #11181f;
+  color: #0d1318;
   text-decoration: none;
   font-size: 1.5em;
 }
 header#masthead .site-branding #top-btn span {
   opacity: 0;
   margin-right: 5px;
-  color: #11181f;
+  color: #0d1318;
   text-transform: uppercase;
   font-size: 1em;
   font-family: 'Lato', helvetica, sans-serif;
@@ -183,7 +183,7 @@ header.entry-header {
   width: 100%;
   position: relative;
 }
-#main a {
+#main #gallery a {
   display: inline-block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -191,8 +191,9 @@ header.entry-header {
   padding: 0;
   margin: 0;
   cursor: pointer;
+  background: #ddd;
 }
-#main a img {
+#main #gallery a img {
   height: auto;
   padding: 0;
   margin: 0;
@@ -200,7 +201,7 @@ header.entry-header {
   -webkit-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
-#main a:after {
+#main #gallery a:after {
   font-size: 60px;
   height: 60px;
   weight: 60px;
@@ -220,11 +221,23 @@ header.entry-header {
   -webkit-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
-#main a:hover:after {
+#main #gallery a:hover:after {
   opacity: 1;
 }
-#main a:hover img {
+#main #gallery a:hover img {
   opacity: 0.5;
+}
+
+section.no-results, section.not-found {
+  text-align: center;
+  margin-top: 100px;
+}
+section.no-results header h1, section.not-found header h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+section.no-results .page-content p, section.not-found .page-content p {
+  font-size: 1.6em;
 }
 
 .edit-link {

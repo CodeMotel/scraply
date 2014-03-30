@@ -14,7 +14,9 @@
 get_header(); ?>
 
 <main id="main" class="site-main" role="main">
+
 	<? get_attachment_files(); ?>
+
 </main><!-- #main -->
 
 <?php get_footer(); ?>
