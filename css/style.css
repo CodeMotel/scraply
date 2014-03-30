@@ -76,7 +76,7 @@ a:focus, a:hover, a:active {
   outline: 0;
 }
 a:hover {
-  color: #e67e22;
+  color: #e74c3c;
 }
 
 h1, h2, h3, h4, h5 {
@@ -158,9 +158,14 @@ header#masthead .site-branding h1 a span {
   height: 28px;
   width: 28px;
   color: #c0392b;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
 }
 header#masthead .site-branding h1 a:hover {
   color: white;
+}
+header#masthead .site-branding h1 a:hover span {
+  color: #e74c3c;
 }
 header#masthead .site-branding #top-btn, header#masthead .site-branding #add-btn {
   position: absolute;
