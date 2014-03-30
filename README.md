@@ -32,9 +32,9 @@ After installation, your site should look like this:
 
 
 <h1>Adding Images</h1>
-<img src="_demo/add.png"/>
 <ul>
 	<li>Click on the 'add' button or navigate to <code>Media > Add New</code> on the admin panel to upload images into the Media Library</li>
+	<img src="_demo/add.png"/>
 	<li>Refresh or Navigate to the root directory to see changes.</li>
 </ul>
 
