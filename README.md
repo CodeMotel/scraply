@@ -27,7 +27,7 @@ Scraply also works as a hosted library.
 	<li>Navigate to <code>Settings > Media</code> through the admin panel and set the thumbnail size to 600px by 600px and uncheck 'Crop Thumgnail...'.</li>
 </ul>
 
-After installation, your site should look like this:
+After a successful installation, your site should look like this:
 <img src="_demo/empty.png"/>
 
 
@@ -40,10 +40,15 @@ After installation, your site should look like this:
 
 
 
-<h2>Planned Updates</h2>
+<h2>Planned Future Updates</h2>
 <ul>
-	<li>Add via URL</li>
+	<li>Add media via URL</li>
 	<li>Image meta data</li>
 	<li>Share to social networks</li>
 	<li>Lightbox</li>
+	<li>Tag and Category filters</li>
 </ul>
+
+
+
+Scraply is built on WordPress with Automattic's <a href="http://underscores.me/">Underscores</a> theme template.
