@@ -31,6 +31,7 @@
 	</div>
 </header><!-- #masthead -->
 
-			<div id="add-new-wrapper">
-			<iframe id="add-new-iframe" src="wp-admin/media-new.php"></iframe>
-		</div>
+<!-- Upload Window -->
+<div id="add-new-wrapper">
+	<iframe id="add-new-iframe" src="wp-admin/media-new.php"></iframe>
+</div>

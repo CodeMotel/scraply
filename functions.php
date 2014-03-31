@@ -167,7 +167,7 @@ function wp_get_attachment_link_2( $id = 0, $size = 'thumbnail', $permalink = fa
 // unattached Images
 function get_attachment_files(){
 $args = array(
-	 'posts_per_page'   => 15,
+//	 'posts_per_page'   => 15,
     'post_type' => 'attachment',
     'numberposts' => -1,
     'post_status' => null,
