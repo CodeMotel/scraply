@@ -123,6 +123,12 @@ require get_template_directory() . '/inc/jetpack.php';
 
 
 
+
+
+/**
+ * Image Gallery
+ */
+
 function the_attachment_link_2( $id = 0, $fullsize = false, $deprecated = false, $permalink = false ) {
 	if ( !empty( $deprecated ) )
 		_deprecated_argument( __FUNCTION__, '2.5' );
@@ -161,6 +167,7 @@ function wp_get_attachment_link_2( $id = 0, $size = 'thumbnail', $permalink = fa
 // unattached Images
 function get_attachment_files(){
 $args = array(
+	 'posts_per_page'   => 15,
     'post_type' => 'attachment',
     'numberposts' => -1,
     'post_status' => null,

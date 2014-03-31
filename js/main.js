@@ -1,4 +1,4 @@
-// Masonry
+// Masonry - Grid
 $(document).ready(function(){
       resizeDiv();
   });
@@ -23,7 +23,9 @@ $(document).ready(function(){
      $('#gallery a.active').css({'height': vph - 32 + 'px'});
 }
 
-// Toggle Full Size
+
+
+// Masonry - Toggle Full Size
 $("#gallery a").click(function(){
   //$('#gallery a').removeClass("active");
   $(this).toggleClass("active");

@@ -1,5 +1,5 @@
 /* Transition Times
 ================================================================================================= */
-@mixin ease($time:333ms, $attr:all) {
-    transition: $attr $time ease-in-out;
+@mixin ease($time:333ms, $attr:all, $delay:0) {
+    transition: $attr $time $delay ease-in-out;
 }
