@@ -8,20 +8,58 @@ $(document).ready(function(){
   function resizeDiv() {
       vpw = $(window).width();
       vph = $(window).height();
-     // -- Section Width and Height -- //
-     $('#gallery a').wookmark({
-		autoResize: true,
-		itemWidth: 380,
-		flexibleWidth:"100%",
-		container: $('#main'),
-		offset: 0,
-		outerOffset: 0,
-		verticalOffset: -3,
-		onLayoutChanged: true
-	});
-     //$('#gallery a.active').attr('height', 'vph !important');
+
+     //$('#gallery a').wookmark({
+	//	autoResize: true,
+	//	itemWidth: 380,
+	//	flexibleWidth:"100%",
+	//	container: $('#main'),
+	//	offset: 0,
+	//	outerOffset: 0,
+	//	verticalOffset: -3,
+	//	onLayoutChanged: true
+	//});
+
      $('#gallery a.active').css({'height': vph - 32 + 'px'});
 }
+
+
+
+
+(function ($){
+  $('#gallery').imagesLoaded(function() {
+    // Prepare layout options.
+    var options = {
+      autoResize: true,
+      itemWidth: 380,
+      flexibleWidth:"100%",
+      container: $('#main'),
+      offset: 0,
+      outerOffset: 0,
+      verticalOffset: -3,
+      onLayoutChanged: true
+    };
+
+    var handler = $('#gallery a');
+
+    var $window = $(window);
+    $window.resize(function() {
+      var windowWidth = $window.width(),
+          newOptions = { flexibleWidth: '50%' };
+
+      // Breakpoint
+      if (windowWidth < 1024) {
+        newOptions.flexibleWidth = '100%';
+      }
+      handler.wookmark(newOptions);
+    });
+
+    // Call the layout function.
+    handler.wookmark(options);
+  });
+})(jQuery);
+
+
 
 
 

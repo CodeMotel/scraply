@@ -148,7 +148,7 @@ body {
 		top:-1000px;
 		right:20px;
 		width:90%;
-		max-width:400px;//650px;
+		max-width:650px;// Ideal would be 400px
 		z-index: 10;
 		overflow: hidden;
 		@include ease;

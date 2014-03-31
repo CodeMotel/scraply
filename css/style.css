@@ -230,7 +230,7 @@ body #add-new-wrapper {
   top: -1000px;
   right: 20px;
   width: 90%;
-  max-width: 400px;
+  max-width: 650px;
   z-index: 10;
   overflow: hidden;
   -webkit-transition: all 333ms 0 ease-in-out;
