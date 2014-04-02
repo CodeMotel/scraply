@@ -1,4 +1,4 @@
-// Masonry - Grid
+// Responsive Elements
 $(document).ready(function(){
       resizeDiv();
   });
@@ -9,6 +9,7 @@ $(document).ready(function(){
       vpw = $(window).width();
       vph = $(window).height();
 
+      // Masonry - Grid v1
      //$('#gallery a').wookmark({
 	//	autoResize: true,
 	//	itemWidth: 380,
@@ -20,15 +21,15 @@ $(document).ready(function(){
 	//	onLayoutChanged: true
 	//});
 
-     $('#gallery a.active').css({'height': vph - 32 + 'px'});
+     //$('#gallery a.active').css({'height': vph - 32 + 'px'});
 }
 
 
 
-
+// Masonry Grid v2
 (function ($){
   $('#gallery').imagesLoaded(function() {
-    // Prepare layout options.
+
     var options = {
       autoResize: true,
       itemWidth: 380,
