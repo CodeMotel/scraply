@@ -1,8 +1,110 @@
-//-- Lato --//
+/* Open Sans
+================================================================================================= */
+@mixin font-opensans($weight:300, $style:normal) {
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-weight:$weight;
+    font-style:$style;
+}
+
+
+
+/* Lato
+================================================================================================= */
 @mixin font-lato($weight:300, $style:normal) {
-	font-family:'Lato', helvetica, sans-serif;
+    font-family: 'Lato', helvetica, sans-serif;
+    font-weight:$weight;
+    font-style:$style;
+}
+
+
+
+/* Proxima Nova
+================================================================================================= */
+@mixin font-pn($weight) {
+    @if $weight == 'light' {font-family:'proxima_novalight';}
+    @else if $weight == 'light-italic' {font-family: 'proxima_novalight_italic';}
+    @else if $weight == 'regular' {font-family: 'proxima_nova_rgregular';}
+    @else if $weight == 'semibold' {font-family: 'proxima_novasemibold';}
+    @else if $weight == 'bold' {font-family: 'proxima_nova_rgbold';}
+    @else if $weight == 'extrabold' {font-family: 'proxima_novaextrabold';}
+    @else if $weight == 'condensed' {font-family: 'proxima_nova_cn_rgregular';}
+}
+
+
+
+/* Novecento
+================================================================================================= */
+//@import "fonts/_novecento";
+
+@mixin font-nov($weight) {
+   @if $weight == 'bold' {font-family: 'Novecentowide-Bold';}
+   @else if $weight == 'light' {font-family: 'Novecentowide-Light';}
+   @else if $weight == 'demibold' {font-family: 'Novecentowide-DemiBold';}
+   @else if $weight == 'book' {font-family: 'Novecentowide-Book';}
+   @else if $weight == 'normal' {font-family: 'Novecentowide-Normal';}
+   @else if $weight == 'medium' {font-family: 'Novecentowide-Medium';}
+}
+
+
+
+/* Hammersmith
+================================================================================================= */
+@mixin font-hammersmith {font-family: 'Hammersmith One', sans-serif;}
+
+
+
+
+/* Alegreya
+================================================================================================= */
+@mixin font-alegreya($weight:300, $style:normal) {
+	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight:$weight;
 	font-style:$style;
 }
 
+
+
+
+/* Cedarville
+================================================================================================= */
+@mixin font-cedarville {font-family: 'Cedarville Cursive', cursive;}
+
+
+
+
+/* Yanone
+================================================================================================= */
+@mixin font-yanone($weight:300, $style:normal) {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight:$weight;
+	font-style:$style;
+}
+
+
+
+/* Dosis
+================================================================================================= */
+@mixin font-dosis($weight:300, $style:normal) {
+    font-family: 'Dosis', sans-serif;
+    font-weight:$weight;
+    font-style:$style;
+}
+
+/* Hagin
+================================================================================================= */
+@mixin font-hagin {
+	font-family:'Hagin Caps Medium', serif;
+	font-weight:400;
+	letter-spacing:0.05em;
+}
+
+
+/* PT Sans & Serif
+================================================================================================= */
+@mixin font-pt($weight) {
+	@if $weight == 'sans' {font-family: 'PT Sans Narrow', sans-serif; font-weight:400;}
+	@else if $weight == 'serif' {font-family: 'PT Serif', serif; font-weight:400;}
+	@else if $weight == 'serif-italic' {font-family: 'PT Serif', serif; font-weight:400; font-style:italic;}
+	@else if $weight == 'serif-bold' {font-family: 'PT Serif', serif; font-weight:700;}
+}
 
