@@ -1,7 +1,7 @@
 Scraply
 ================
 
-A personal image bookmark gallery built on Wordpress. <a href="http://scraply.see8ch.com" target="_blank">View Demo</a>.
+A personal image bookmark gallery built on Wordpress. <a href="http://scrapl.onjumpstarter.io/" target="_blank">View Demo</a>.
 
 <img src="_demo/home.png"/>
 
